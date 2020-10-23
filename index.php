@@ -73,7 +73,7 @@
                                         document.write(p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear());
                                     </script> - последний день продажи Fish Hunt</p>
                             </div>
-                            <form action="" method="">
+                            <form action="lucky.php" method="POST">
                                 <div class="inputs">
                                     <label for="country">Страна проживания</label>
                                     <select name="country" id="country"></select>
@@ -86,6 +86,23 @@
                                     <label for="phone">Ваш телефон</label>
                                     <input type="text" name="phone" id="phone" placeholder="Телефон">
                                 </div>
+                                <input type='hidden' name='utm_source' value='<?=$_GET['utm_source']?>' />
+
+<input type='hidden' name='utm_content' value='<?=$_GET['utm_content']?>' />
+
+<input type='hidden' name='utm_campaign' value='<?=$_GET['utm_campaign']?>' />
+
+<input type='hidden' name='utm_term' value='<?=$_GET['utm_term']?>' />
+
+<input type='hidden' name='utm_medium' value='<?=$_GET['utm_medium']?>' />
+
+<input type='hidden' name='subid' value='<?=$_GET['subid']?>' />
+
+<input type='hidden' name='subid1' value='<?=$_GET['subid1']?>' />
+
+<input type='hidden' name='subid2' value='<?=$_GET['subid2']?>' />
+
+<input type='hidden' name='subid3' value='<?=$_GET['subid3']?>' />
                                 <div class="button">
                                     <p>Сегодня уже купили:</p>
                                     <b>
@@ -427,7 +444,7 @@
                                         document.write(p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear());
                                     </script> - последний день продажи Fish Hunt</p>
                             </div>
-                            <form action="" method="">
+                            <form action="lucky.php" method="POST">
                                 <div class="inputs">
                                     <label for="country">Страна проживания</label>
                                     <select name="country" id="country"></select>
@@ -440,6 +457,23 @@
                                     <label for="phone">Ваш телефон</label>
                                     <input type="text" name="phone" id="phone" placeholder="Телефон">
                                 </div>
+                                <input type='hidden' name='utm_source' value='<?=$_GET['utm_source']?>' />
+
+<input type='hidden' name='utm_content' value='<?=$_GET['utm_content']?>' />
+
+<input type='hidden' name='utm_campaign' value='<?=$_GET['utm_campaign']?>' />
+
+<input type='hidden' name='utm_term' value='<?=$_GET['utm_term']?>' />
+
+<input type='hidden' name='utm_medium' value='<?=$_GET['utm_medium']?>' />
+
+<input type='hidden' name='subid' value='<?=$_GET['subid']?>' />
+
+<input type='hidden' name='subid1' value='<?=$_GET['subid1']?>' />
+
+<input type='hidden' name='subid2' value='<?=$_GET['subid2']?>' />
+
+<input type='hidden' name='subid3' value='<?=$_GET['subid3']?>' />
                                 <div class="button">
                                     <p>Сегодня уже купили:</p>
                                     <b>
@@ -458,8 +492,8 @@
                             <p>
                                 <rekv>"Фиш Хант", 123007, г. Москва, ул. Магистральная 1 стр. 7</rekv>
                             </p>
-                            <a href="/politic.html" style="color: inherit">Политика конфиденциальности</a>
-                            <a href="/oferta.html" style="color: inherit">Публичная оферта</a>
+                            <a href="politic.html" style="color: inherit">Политика конфиденциальности</a>
+                            <a href="oferta.html" style="color: inherit">Публичная оферта</a>
                         </div>
                     </div>
                 </div>
@@ -473,22 +507,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
-    <script src="https://click.lucky.online/js/leadprofit.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
 
-    <script>
-        $("form").leadprofit({
-            hash: "623fb453-0a1a-48a6-ab5c-0ce1f06bda47"
-        }).leadprofitSubmit({
-            confirmUrl: '/confirm.html',
-            counterParams: {
-                country: "{country}",
-                version: document.location.pathname.replace(/\/+/g, '').replace('landings', '').replace('index.html', '').replace('index2.html', '').replace('confirm.html', '')
-            }
-        });
-    </script>
 
-    <script src="../price.js"></script>
+    <script src="price.js"></script>
 </body>
 
 </html>
