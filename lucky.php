@@ -3,9 +3,9 @@
 include_once './lib/cURL.php'; //обязательно проверьте наличие папки lib  на вашем сервере
 
 //подробнее об этом методе https://lucky.online/webmaster/help/faq.html#api-metod-2-otpravka-lida
-define('TOKEN', '');
+define('TOKEN', '5f8d60078e61a024150822037381');
 // Токен вебмастера - попросите своего менеджера открыть прием лидов по АПИ, сам токен хранится здесь https://lucky.online/webmaster/profile.html
-define('CAMPAIGN_HASH', 'ca2c5e40-3041-4916-aad2-d7c9efba');
+define('CAMPAIGN_HASH', 'a37548eb-0cd0-4277-a07c-0b2f59ed3987');
 // Хеш потока. Сформируйте поток ЛЮБЫМ методом в ПП - возьмие хеш по примеру "7aa2ecee-e9d6-41e2-b974-9dff9ac3af11"
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
